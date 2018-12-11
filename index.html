@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AJAX</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>CALCULADORA CON AJAX</title>
+
+        <link rel="stylesheet" href="css/tooltip.css" type="text/css">
+        <link rel="stylesheet" href="css/horizontal-menu/materialize.css" type="text/css">
+        <link rel="stylesheet" href="css/jquery.dataTables.min.css" type="text/css">
+        <link rel="stylesheet" href="css/jquery.dataTables_themeroller.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="css/sweetalert.css" type="text/css">
+        <!-- <link rel="stylesheet" href="css/ghpages-materialize.css" type="text/css" media="screen,projection"> -->
+        <script type="text/javascript" src="js/sweetalert.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+        <script type="text/javascript" src="js/alertas.js"></script>
+    </head>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/scrollspy.js"></script>
+    <script>
+    </script>
+    <div class="col s12">
+        <header id="header" class="page-topbar">
+          <nav class="cyan darken-3">
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo center">Calculadora con AJAX</a>
+            </div>
+          </nav>
+        </header>
+    </div>
+    <div class="container">
+        <br><br>
+        <div class="row">
+        <div class="col m2"></div>
+        <div class="input-field col s12 m8">
+          <input id="operador1" type="text" class="validate" required="">
+          <label for="operador1">Primer valor:</label>
+            </div>
+            <div class="col m2"></div>
+          </div>
+        <br>
+        <div class="row">
+            <div class="col m2"></div>
+        <div class="input-field col s12 m8">
+        <select id="operacion" name="operacion">
+          <option value="" disabled selected>Elije una operaci&oacute;n</option>
+          <option value="1">+</option>
+          <option value="2">-</option>
+          <option value="3">*</option>
+          <option value="4">/</option>
+          <option value="5">%</option>
+        </select>
+        <label>Materialize Select</label>
+      </div>
+      <div class="col m2"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col m2"></div>
+        <div class="input-field col s12 m8">
+          <input id="operador2" type="text" class="validate" required="">
+          <label for="operador2">Segundo valor:</label>
+            </div>
+            <div class="col m2"></div>
+          </div>
+          <div class="row"">
+              <div class="col s12">
+                <div class="col m2"></div>
+                <div id="mensaje" class="col m4"></div>
+                  <div class="col m4" align="right">
+                        <button type="submit" onclick="calcular()" class="btn" type="submit" name="action">Calcular<i class="material-icons right">send</i></button>
+                  </div>
+                  <div class="col m2"></div>
+              </div>
+          </div>
+    </div>
+<script type="text/javascript" src="js/calculadora.js"></script>
+    <footer class="page-footer cyan darken-3">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Calculadora</h5>
+                <p class="grey-text text-lighten-4">Calculadora de funciones matem&aacute;ticas b&aacute;sicas creada con AJAX</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Vis&iacute;tame en mi red social</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/MarkoVT5">Facebook de Marco Valle</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2018 Creado por Marco Valle
+            </div>
+          </div>
+        </footer>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="js/data-tables-script.js"></script>
+<script type="text/javascript" src="js/init.js"></script>
+<script type="text/javascript" src="js/jquery.collapsible.min.js"></script>
+<script type="text/javascript" src="js/sweetalert.min.js"></script>
+<script type="text/javascript" src="js/scrollspy.js"></script>
+<script type="text/javascript" src="js/perfect-scrollbar.min.js"></script>
+<!--plugins.js - Some Specific JS codes for Plugin Settings-->
+<script type="text/javascript" src="js/plugins.js"></script>
+<!--custom-script.js - Add your own theme custom JS-->
+<script type="text/javascript" src="js/custom-script.js"></script>
+<script>
+    $(".dropdown-trigger").dropdown();
+
+</script>
+</body>
+</html>
